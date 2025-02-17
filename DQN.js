@@ -17,6 +17,7 @@ class DQN {
     this.learnStart = config.learnStart || 1000;
     this.maxMemory = config.maxMemory || 10000;
     this.temperature = config.temperature || 1.0; // Boltzmann exploration temperature - now primary exploration control
+    this.minTemperate = config.minTemperature || 0.01
 
     this.initialLearningRate = config.initialLearningRate || 0.001; // For learning rate decay
     this.decayRate = config.decayRate || 0.96;
